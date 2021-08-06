@@ -1,0 +1,13 @@
+name: conf21
+title: Chef Conf 21 - InSpec Profile
+maintainer: Tim Jones & Joseph McCrea (Not Maintained)
+copyright: Tim Jones & Joseph McCrea
+copyright_email: josephmichaelmccrea@gmail.com
+license: Apache-2.0
+summary: Chef Conf 21 - Sample Profile
+version: 1.0.0
+supports:
+  - platform: gcp
+depends:
+  - name: inspec-gcp
+    url: https://github.com/inspec/inspec-gcp/archive/v1.7.0.tar.gz

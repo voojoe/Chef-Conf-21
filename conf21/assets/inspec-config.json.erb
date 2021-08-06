@@ -1,0 +1,15 @@
+{
+    "reporter": {
+        
+        "cli" : {
+            "stdout" : true
+        }
+
+        <% if ENV['JSON_OUT'] %>
+        ,"json": {
+            "file": "<%= ENV['JSON_OUT'] %>",
+            "stdout": false
+        }
+        <% end %>
+    }
+}

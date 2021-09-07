@@ -12,9 +12,5 @@ COPY --from=build /inspec/inspec-profile.tar.gz /inspec/
 ENV GOOGLE_APPLICATION_CREDENTIALS /inspec/gcp-creds.json
 ENV CHEF_LICENSE "accept"
 
-RUN groupadd -g 999 appuser && useradd -d /inspec/ -g appuser appuser
-RUN chown -R appuser /inspec/
-USER appuser
-
 ENTRYPOINT [ "sh" ]
 CMD [ "/inspec/inspec-wrapper.sh" ]

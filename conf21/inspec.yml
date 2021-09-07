@@ -11,3 +11,8 @@ supports:
 depends:
   - name: inspec-gcp
     url: https://github.com/inspec/inspec-gcp/archive/v1.7.0.tar.gz
+inputs:
+  - name: gcp_project_id
+    required: true
+    description: "The GCP Project ID"
+    type: string
